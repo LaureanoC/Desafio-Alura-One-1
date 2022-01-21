@@ -93,7 +93,7 @@ footer p {
 
     text-align:center;
     font-family: 'Roboto', sans-serif;
-    font-size:2em;
+    font-size:2.2em;
     
 }
 
@@ -101,4 +101,9 @@ a {
     text-decoration: none;
     color:#1C2833;
     font-size:0.8em;  
+}
+
+.info {
+
+    font-size: 0.5em;
 }
