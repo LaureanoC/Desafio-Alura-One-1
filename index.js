@@ -39,11 +39,11 @@ function validarTexto(texto){
     
 }
 
-function obtenerTexto(){
+function obtenerTextoE(){
 
     var entrada = document.querySelector(".entrada-encriptar");
     
-    texto = encriptarLetras(entrada.value);
+    var texto = encriptarLetras(entrada.value);
     
    if (validarTexto(texto)){
 
@@ -125,9 +125,51 @@ function encriptarLetras (texto){
 }
 
 
+function desencriptarLetras(texto){
+
+        var regA = /ai/g;
+        var regE = /enter/g;
+        var regI = /imes/g;
+        var regO = /ober/g;
+        var regU = /ufat/g;
+        texto = texto.replaceAll(regA,"a");
+        texto = texto.replaceAll(regE,"e");
+        texto = texto.replaceAll(regI,"i");
+        texto = texto.replaceAll(regO,"o");
+        texto = texto.replaceAll(regU,"u");
+        return texto;
+
+
+}
+
+
+function obtenerTextoD(){
+
+
+    var entrada = document.querySelector(".entrada-encriptar");
+    var texto = desencriptarLetras(entrada.value);
+
+    if (validarTexto(texto)){
+
+        mostrarTexto(texto);
+   }
+
+   else {
+
+        alert("No se admiten: mayusculas, letras especiales o el contenido en blanco");
+
+   }
+
+
+};
+
+
 
 var boton = document.querySelector(".boton-encriptar");
-boton.onclick = obtenerTexto;
+boton.onclick = obtenerTextoE;
+
+var desencriptarboton = document.querySelector(".boton-desencriptar");
+desencriptarboton.onclick = obtenerTextoD;
 
 
 /* Entendiendo Expresiones regulares lenguajejs.com

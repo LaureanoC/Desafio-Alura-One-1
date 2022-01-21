@@ -50,7 +50,7 @@ color:#1C2833;
     
 }
 
-.boton-encriptar, .boton-copiar {
+.boton-encriptar, .boton-copiar, .boton-desencriptar {
 
     background-color:#7FB3D5;
     color:#1A5276;
@@ -63,7 +63,7 @@ color:#1C2833;
 
 }
 
-.boton-encriptar:hover {
+.boton-encriptar:hover, .boton-copiar:hover, .boton-desencriptar:hover {
 
     background-color:#1F618D;
     color:#7FB3D5;
