@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+
+h1 {
+    
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 2.3em;
+    color:#2471A3;
+}
+
+h3 {
+    
+    font-family: 'Mukta', sans-serif;
+    font-weight:400;
+    margin:1em 0;
+    font-size: 1.8em;
+    color:#2980B9;
+}
+
+html {
+    background-color: #EAF2F8;
+    margin: 0;
+    padding: 0;
+}
+
+.container-body {
+
+    width: 70%;
+    margin: 0 auto;
+}
+
+p {
+    font-family: 'Mukta', sans-serif;
+}
+
+
+.entrada-encriptar {
+
+background-color:#D4E6F1;
+border: none;
+padding:0 1em;
+border-radius: 0.5em;
+width:20em;
+height:2.5em;
+outline:none;
+font-size:1.4em;
+color:#1C2833;
+    
+}
+
+.boton-encriptar, .boton-copiar {
+
+    background-color:#7FB3D5;
+    color:#1A5276;
+    outline:none;
+    border:none;
+    font-size:1.4em;
+    border-radius:0.5em;
+    padding:0.7em;
+    margin:0;
+
+}
+
+.boton-encriptar:hover {
+
+    background-color:#1F618D;
+    color:#7FB3D5;
+
+}
+
+.parrafo-encriptado {
+
+    color:#1F618D;
+}
+
+::placeholder {
+
+    color:#9fcce8;
+}
+
+footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:25em;
+    width:100%;
+    background:#34495E99;
+ }
+
+footer p {
+
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+    font-size:2em;
+    
+}
+
+a {
+    text-decoration: none;
+    color:#1C2833;
+    font-size:0.8em;  
+}
