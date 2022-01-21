@@ -163,13 +163,31 @@ function obtenerTextoD(){
 
 };
 
+function updateClipboard(newClip) {
+    navigator.clipboard.writeText(newClip).then(function() {
+      /* clipboard successfully set */
+    }, function() {
+      /* clipboard write failed */
+    });
+  }
 
+function copiarTexto(){
+
+    var entrada = document.querySelector(".parrafo-encriptado");
+    console.log(entrada);
+    var texto = entrada.textContent;
+    updateClipboard(texto);
+    
+}
 
 var boton = document.querySelector(".boton-encriptar");
 boton.onclick = obtenerTextoE;
 
 var desencriptarboton = document.querySelector(".boton-desencriptar");
 desencriptarboton.onclick = obtenerTextoD;
+
+var copiarboton = document.querySelector(".boton-copiar");
+copiarboton.onclick = copiarTexto;
 
 
 /* Entendiendo Expresiones regulares lenguajejs.com
